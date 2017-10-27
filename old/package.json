@@ -1,0 +1,35 @@
+{
+  "title": "Globalize",
+  "name": "Globalize",
+  "version": "4.0.0-beta.2",
+  "description": "Custom-build website from scratch for upwork client",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "homepage": "https://andrewgaryga.github.io/Globalize",
+  "bugs": {
+    "url": "https://andrewgaryga.github.io/Globalize/issues",
+    "email": "andrewgaryga@gmail.com"
+  },
+  "contributors": [
+    "David Miller (https://andrewgaryga.github.io/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://andrewgaryga.github.io/Globalize.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "jquery.easing": "^1.4.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.18.13",
+    "gulp": "^3.9.1"
+  }
+}
