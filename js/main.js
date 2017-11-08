@@ -20,6 +20,17 @@
     $('.navbar-collapse').collapse('hide');
   });
 
+  // Cntact menu nav  ul li:last-child a{ color: red;}
+  $('nav ul li:last-child a').click(function() {
+    // $('.navbar-collapse').collapse('hide');
+    $('#contact-menu').toggleClass('contact-visible');
+  });
+
+  $('button.contact-close').click(function() {
+    // $('.navbar-collapse').collapse('hide');
+    $('#contact-menu').toggleClass('contact-visible');
+  });
+
   // Activate scrollspy to add active class to navbar items on scroll
   // $('body').scrollspy({
   //   target: '#mainNav',
