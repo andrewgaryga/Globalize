@@ -334,377 +334,667 @@ $('.dropdown-menu a').click(function(){
 		<!-- Map End -->
 	</head>
 
-	<body id="page-top">
+<body id="page-top">
 
-		<!-- Navigation -->
-		<nav class="navbar navbar-expand-lg fixed-top navbar-white" id="mainNav">
-			<div class="container no-override">
-				<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/nav-logo.jpg" width="122" height="37" class="d-inline-block img-fluid" alt=""><span class="vl"></span><span class="navbar-band-text">Attainable Expansion Services</span></a>
-				<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-					<span> </span>
-					<span> </span>
-					<span> </span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#about">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#services">Services</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="#locations">Locations</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg fixed-top navbar-white" id="mainNav">
+		<div class="container no-override">
+			<a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/nav-logo.jpg" width="122" height="37" class="d-inline-block img-fluid" alt=""><span class="vl"></span><span class="navbar-brand-text">Attainable Expansion Services</span></a>
+			<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span> </span>
+				<span> </span>
+				<span> </span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="services.html">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Locations</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
 			</div>
-		</nav>
-
-		<header class="small-image text-white">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h3>Locations</h3>
-						<!-- <h1 id="map-text"></h1> -->
-					</div>
-				</div>
-			</div>
-		</header>
-		<div class="map-wrapper">
-			<div id="map1" style="width: 100%; height: 428px"></div>
 		</div>
-		<div class="map-nav">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<ol class="breadcrumb">
-						  <li class="breadcrumb-item" id="map-arrow"><a href="#map1">Country</a></li>
-						  <li class="breadcrumb-item active map-text" id="map-text"></li>
-						</ol>
-					</div>
+	</nav>
+
+	<header class="small-image text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<h3>Locations</h3>
+					<!-- <h1 id="map-text"></h1> -->
 				</div>
 			</div>
 		</div>
+	</header>
+	<div class="map-wrapper">
+		<div id="map1" style="width: 100%; height: 428px"></div>
+	</div>
+	<div class="map-nav">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<ol class="breadcrumb">
+					  <li class="breadcrumb-item" id="map-arrow"><a href="#map1">Country</a></li>
+					  <li class="breadcrumb-item active map-text" id="map-text"></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		<div id="map-nav-mobile">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<ol class="breadcrumb">
-							<li class="breadcrumb-item green breadcrumb-mobile" id="map-arrow"><a href="#map1">Country</a></li>
+	<div id="map-nav-mobile">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item green breadcrumb-mobile" id="map-arrow"><a href="#map1">Country</a></li>
 
-							<li class="dropdown breadcrumb-item green breadcrumb-mobile">
-							  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    <span id="selected">France</span>
-							  </button>
-							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							   
-							    <!-- countries -->
+						<li class="dropdown breadcrumb-item green breadcrumb-mobile">
+						  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span id="selected">France</span>
+						  </button>
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						   
+						    <!-- countries -->
+							<a class="dropdown-item" href="#" value="United States">United States</a> 
+								<a class="dropdown-item" href="#" value="United Kingdom">United Kingdom</a> 
+								<a class="dropdown-item" href="#" value="Afghanistan">Afghanistan</a> 
+								<a class="dropdown-item" href="#" value="Albania">Albania</a> 
+								<a class="dropdown-item" href="#" value="Algeria">Algeria</a> 
+								<a class="dropdown-item" href="#" value="American Samoa">American Samoa</a> 
+								<a class="dropdown-item" href="#" value="Andorra">Andorra</a> 
+								<a class="dropdown-item" href="#" value="Angola">Angola</a> 
+								<a class="dropdown-item" href="#" value="Anguilla">Anguilla</a> 
+								<a class="dropdown-item" href="#" value="Antarctica">Antarctica</a> 
+								<a class="dropdown-item" href="#" value="Antigua and Barbuda">Antigua and Barbuda</a> 
+								<a class="dropdown-item" href="#" value="Argentina">Argentina</a> 
+								<a class="dropdown-item" href="#" value="Armenia">Armenia</a> 
+								<a class="dropdown-item" href="#" value="Aruba">Aruba</a> 
+								<a class="dropdown-item" href="#" value="Australia">Australia</a> 
+								<a class="dropdown-item" href="#" value="Austria">Austria</a> 
+								<a class="dropdown-item" href="#" value="Azerbaijan">Azerbaijan</a> 
+								<a class="dropdown-item" href="#" value="Bahamas">Bahamas</a> 
+								<a class="dropdown-item" href="#" value="Bahrain">Bahrain</a> 
+								<a class="dropdown-item" href="#" value="Bangladesh">Bangladesh</a> 
+								<a class="dropdown-item" href="#" value="Barbados">Barbados</a> 
+								<a class="dropdown-item" href="#" value="Belarus">Belarus</a> 
+								<a class="dropdown-item" href="#" value="Belgium">Belgium</a> 
+								<a class="dropdown-item" href="#" value="Belize">Belize</a> 
+								<a class="dropdown-item" href="#" value="Benin">Benin</a> 
+								<a class="dropdown-item" href="#" value="Bermuda">Bermuda</a> 
+								<a class="dropdown-item" href="#" value="Bhutan">Bhutan</a> 
+								<a class="dropdown-item" href="#" value="Bolivia">Bolivia</a> 
+								<a class="dropdown-item" href="#" value="Bosnia and Herzegovina">Bosnia and Herzegovina</a> 
+								<a class="dropdown-item" href="#" value="Botswana">Botswana</a> 
+								<a class="dropdown-item" href="#" value="Bouvet Island">Bouvet Island</a> 
+								<a class="dropdown-item" href="#" value="Brazil">Brazil</a> 
+								<a class="dropdown-item" href="#" value="British Indian Ocean Territory">British Indian Ocean Territory</a> 
+								<a class="dropdown-item" href="#" value="Brunei Darussalam">Brunei Darussalam</a> 
+								<a class="dropdown-item" href="#" value="Bulgaria">Bulgaria</a> 
+								<a class="dropdown-item" href="#" value="Burkina Faso">Burkina Faso</a> 
+								<a class="dropdown-item" href="#" value="Burundi">Burundi</a> 
+								<a class="dropdown-item" href="#" value="Cambodia">Cambodia</a> 
+								<a class="dropdown-item" href="#" value="Cameroon">Cameroon</a> 
+								<a class="dropdown-item" href="#" value="Canada">Canada</a> 
+								<a class="dropdown-item" href="#" value="Cape Verde">Cape Verde</a> 
+								<a class="dropdown-item" href="#" value="Cayman Islands">Cayman Islands</a> 
+								<a class="dropdown-item" href="#" value="Central African Republic">Central African Republic</a> 
+								<a class="dropdown-item" href="#" value="Chad">Chad</a> 
+								<a class="dropdown-item" href="#" value="Chile">Chile</a> 
+								<a class="dropdown-item" href="#" value="China">China</a> 
+								<a class="dropdown-item" href="#" value="Christmas Island">Christmas Island</a> 
+								<a class="dropdown-item" href="#" value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</a> 
+								<a class="dropdown-item" href="#" value="Colombia">Colombia</a> 
+								<a class="dropdown-item" href="#" value="Comoros">Comoros</a> 
+								<a class="dropdown-item" href="#" value="Congo">Congo</a> 
+								<a class="dropdown-item" href="#" value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</a> 
+								<a class="dropdown-item" href="#" value="Cook Islands">Cook Islands</a> 
+								<a class="dropdown-item" href="#" value="Costa Rica">Costa Rica</a> 
+								<a class="dropdown-item" href="#" value="Cote D'ivoire">Cote D'ivoire</a> 
+								<a class="dropdown-item" href="#" value="Croatia">Croatia</a> 
+								<a class="dropdown-item" href="#" value="Cuba">Cuba</a> 
+								<a class="dropdown-item" href="#" value="Cyprus">Cyprus</a> 
+								<a class="dropdown-item" href="#" value="Czech Republic">Czech Republic</a> 
+								<a class="dropdown-item" href="#" value="Denmark">Denmark</a> 
+								<a class="dropdown-item" href="#" value="Djibouti">Djibouti</a> 
+								<a class="dropdown-item" href="#" value="Dominica">Dominica</a> 
+								<a class="dropdown-item" href="#" value="Dominican Republic">Dominican Republic</a> 
+								<a class="dropdown-item" href="#" value="Ecuador">Ecuador</a> 
+								<a class="dropdown-item" href="#" value="Egypt">Egypt</a> 
+								<a class="dropdown-item" href="#" value="El Salvador">El Salvador</a> 
+								<a class="dropdown-item" href="#" value="Equatorial Guinea">Equatorial Guinea</a> 
+								<a class="dropdown-item" href="#" value="Eritrea">Eritrea</a> 
+								<a class="dropdown-item" href="#" value="Estonia">Estonia</a> 
+								<a class="dropdown-item" href="#" value="Ethiopia">Ethiopia</a> 
+								<a class="dropdown-item" href="#" value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</a> 
+								<a class="dropdown-item" href="#" value="Faroe Islands">Faroe Islands</a> 
+								<a class="dropdown-item" href="#" value="Fiji">Fiji</a> 
+								<a class="dropdown-item" href="#" value="Finland">Finland</a> 
+								<a class="dropdown-item" href="#" value="France">France</a> 
+								<a class="dropdown-item" href="#" value="French Guiana">French Guiana</a> 
+								<a class="dropdown-item" href="#" value="French Polynesia">French Polynesia</a> 
+								<a class="dropdown-item" href="#" value="French Southern Territories">French Southern Territories</a> 
+								<a class="dropdown-item" href="#" value="Gabon">Gabon</a> 
+								<a class="dropdown-item" href="#" value="Gambia">Gambia</a> 
+								<a class="dropdown-item" href="#" value="Georgia">Georgia</a> 
+								<a class="dropdown-item" href="#" value="Germany">Germany</a> 
+								<a class="dropdown-item" href="#" value="Ghana">Ghana</a> 
+								<a class="dropdown-item" href="#" value="Gibraltar">Gibraltar</a> 
+								<a class="dropdown-item" href="#" value="Greece">Greece</a> 
+								<a class="dropdown-item" href="#" value="Greenland">Greenland</a> 
+								<a class="dropdown-item" href="#" value="Grenada">Grenada</a> 
+								<a class="dropdown-item" href="#" value="Guadeloupe">Guadeloupe</a> 
+								<a class="dropdown-item" href="#" value="Guam">Guam</a> 
+								<a class="dropdown-item" href="#" value="Guatemala">Guatemala</a> 
+								<a class="dropdown-item" href="#" value="Guinea">Guinea</a> 
+								<a class="dropdown-item" href="#" value="Guinea-bissau">Guinea-bissau</a> 
+								<a class="dropdown-item" href="#" value="Guyana">Guyana</a> 
+								<a class="dropdown-item" href="#" value="Haiti">Haiti</a> 
+								<a class="dropdown-item" href="#" value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</a> 
+								<a class="dropdown-item" href="#" value="Holy See (Vatican City State)">Holy See (Vatican City State)</a> 
+								<a class="dropdown-item" href="#" value="Honduras">Honduras</a> 
+								<a class="dropdown-item" href="#" value="Hong Kong">Hong Kong</a> 
+								<a class="dropdown-item" href="#" value="Hungary">Hungary</a> 
+								<a class="dropdown-item" href="#" value="Iceland">Iceland</a> 
+								<a class="dropdown-item" href="#" value="India">India</a> 
+								<a class="dropdown-item" href="#" value="Indonesia">Indonesia</a> 
+								<a class="dropdown-item" href="#" value="Iran, Islamic Republic of">Iran, Islamic Republic of</a> 
+								<a class="dropdown-item" href="#" value="Iraq">Iraq</a> 
+								<a class="dropdown-item" href="#" value="Ireland">Ireland</a> 
+								<a class="dropdown-item" href="#" value="Israel">Israel</a> 
+								<a class="dropdown-item" href="#" value="Italy">Italy</a> 
+								<a class="dropdown-item" href="#" value="Jamaica">Jamaica</a> 
+								<a class="dropdown-item" href="#" value="Japan">Japan</a> 
+								<a class="dropdown-item" href="#" value="Jordan">Jordan</a> 
+								<a class="dropdown-item" href="#" value="Kazakhstan">Kazakhstan</a> 
+								<a class="dropdown-item" href="#" value="Kenya">Kenya</a> 
+								<a class="dropdown-item" href="#" value="Kiribati">Kiribati</a> 
+								<a class="dropdown-item" href="#" value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</a> 
+								<a class="dropdown-item" href="#" value="Korea, Republic of">Korea, Republic of</a> 
+								<a class="dropdown-item" href="#" value="Kuwait">Kuwait</a> 
+								<a class="dropdown-item" href="#" value="Kyrgyzstan">Kyrgyzstan</a> 
+								<a class="dropdown-item" href="#" value="Lao People's Democratic Republic">Lao People's Democratic Republic</a> 
+								<a class="dropdown-item" href="#" value="Latvia">Latvia</a> 
+								<a class="dropdown-item" href="#" value="Lebanon">Lebanon</a> 
+								<a class="dropdown-item" href="#" value="Lesotho">Lesotho</a> 
+								<a class="dropdown-item" href="#" value="Liberia">Liberia</a> 
+								<a class="dropdown-item" href="#" value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</a> 
+								<a class="dropdown-item" href="#" value="Liechtenstein">Liechtenstein</a> 
+								<a class="dropdown-item" href="#" value="Lithuania">Lithuania</a> 
+								<a class="dropdown-item" href="#" value="Luxembourg">Luxembourg</a> 
+								<a class="dropdown-item" href="#" value="Macao">Macao</a> 
+								<a class="dropdown-item" href="#" value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</a> 
+								<a class="dropdown-item" href="#" value="Madagascar">Madagascar</a> 
+								<a class="dropdown-item" href="#" value="Malawi">Malawi</a> 
+								<a class="dropdown-item" href="#" value="Malaysia">Malaysia</a> 
+								<a class="dropdown-item" href="#" value="Maldives">Maldives</a> 
+								<a class="dropdown-item" href="#" value="Mali">Mali</a> 
+								<a class="dropdown-item" href="#" value="Malta">Malta</a> 
+								<a class="dropdown-item" href="#" value="Marshall Islands">Marshall Islands</a> 
+								<a class="dropdown-item" href="#" value="Martinique">Martinique</a> 
+								<a class="dropdown-item" href="#" value="Mauritania">Mauritania</a> 
+								<a class="dropdown-item" href="#" value="Mauritius">Mauritius</a> 
+								<a class="dropdown-item" href="#" value="Mayotte">Mayotte</a> 
+								<a class="dropdown-item" href="#" value="Mexico">Mexico</a> 
+								<a class="dropdown-item" href="#" value="Micronesia, Federated States of">Micronesia, Federated States of</a> 
+								<a class="dropdown-item" href="#" value="Moldova, Republic of">Moldova, Republic of</a> 
+								<a class="dropdown-item" href="#" value="Monaco">Monaco</a> 
+								<a class="dropdown-item" href="#" value="Mongolia">Mongolia</a> 
+								<a class="dropdown-item" href="#" value="Montserrat">Montserrat</a> 
+								<a class="dropdown-item" href="#" value="Morocco">Morocco</a> 
+								<a class="dropdown-item" href="#" value="Mozambique">Mozambique</a> 
+								<a class="dropdown-item" href="#" value="Myanmar">Myanmar</a> 
+								<a class="dropdown-item" href="#" value="Namibia">Namibia</a> 
+								<a class="dropdown-item" href="#" value="Nauru">Nauru</a> 
+								<a class="dropdown-item" href="#" value="Nepal">Nepal</a> 
+								<a class="dropdown-item" href="#" value="Netherlands">Netherlands</a> 
+								<a class="dropdown-item" href="#" value="Netherlands Antilles">Netherlands Antilles</a> 
+								<a class="dropdown-item" href="#" value="New Caledonia">New Caledonia</a> 
+								<a class="dropdown-item" href="#" value="New Zealand">New Zealand</a> 
+								<a class="dropdown-item" href="#" value="Nicaragua">Nicaragua</a> 
+								<a class="dropdown-item" href="#" value="Niger">Niger</a> 
+								<a class="dropdown-item" href="#" value="Nigeria">Nigeria</a> 
+								<a class="dropdown-item" href="#" value="Niue">Niue</a> 
+								<a class="dropdown-item" href="#" value="Norfolk Island">Norfolk Island</a> 
+								<a class="dropdown-item" href="#" value="Northern Mariana Islands">Northern Mariana Islands</a> 
+								<a class="dropdown-item" href="#" value="Norway">Norway</a> 
+								<a class="dropdown-item" href="#" value="Oman">Oman</a> 
+								<a class="dropdown-item" href="#" value="Pakistan">Pakistan</a> 
+								<a class="dropdown-item" href="#" value="Palau">Palau</a> 
+								<a class="dropdown-item" href="#" value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</a> 
+								<a class="dropdown-item" href="#" value="Panama">Panama</a> 
+								<a class="dropdown-item" href="#" value="Papua New Guinea">Papua New Guinea</a> 
+								<a class="dropdown-item" href="#" value="Paraguay">Paraguay</a> 
+								<a class="dropdown-item" href="#" value="Peru">Peru</a> 
+								<a class="dropdown-item" href="#" value="Philippines">Philippines</a> 
+								<a class="dropdown-item" href="#" value="Pitcairn">Pitcairn</a> 
+								<a class="dropdown-item" href="#" value="Poland">Poland</a> 
+								<a class="dropdown-item" href="#" value="Portugal">Portugal</a> 
+								<a class="dropdown-item" href="#" value="Puerto Rico">Puerto Rico</a> 
+								<a class="dropdown-item" href="#" value="Qatar">Qatar</a> 
+								<a class="dropdown-item" href="#" value="Reunion">Reunion</a> 
+								<a class="dropdown-item" href="#" value="Romania">Romania</a> 
+								<a class="dropdown-item" href="#" value="Russian Federation">Russian Federation</a> 
+								<a class="dropdown-item" href="#" value="Rwanda">Rwanda</a> 
+								<a class="dropdown-item" href="#" value="Saint Helena">Saint Helena</a> 
+								<a class="dropdown-item" href="#" value="Saint Kitts and Nevis">Saint Kitts and Nevis</a> 
+								<a class="dropdown-item" href="#" value="Saint Lucia">Saint Lucia</a> 
+								<a class="dropdown-item" href="#" value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</a> 
+								<a class="dropdown-item" href="#" value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</a> 
+								<a class="dropdown-item" href="#" value="Samoa">Samoa</a> 
+								<a class="dropdown-item" href="#" value="San Marino">San Marino</a> 
+								<a class="dropdown-item" href="#" value="Sao Tome and Principe">Sao Tome and Principe</a> 
+								<a class="dropdown-item" href="#" value="Saudi Arabia">Saudi Arabia</a> 
+								<a class="dropdown-item" href="#" value="Senegal">Senegal</a> 
+								<a class="dropdown-item" href="#" value="Serbia and Montenegro">Serbia and Montenegro</a> 
+								<a class="dropdown-item" href="#" value="Seychelles">Seychelles</a> 
+								<a class="dropdown-item" href="#" value="Sierra Leone">Sierra Leone</a> 
+								<a class="dropdown-item" href="#" value="Singapore">Singapore</a> 
+								<a class="dropdown-item" href="#" value="Slovakia">Slovakia</a> 
+								<a class="dropdown-item" href="#" value="Slovenia">Slovenia</a> 
+								<a class="dropdown-item" href="#" value="Solomon Islands">Solomon Islands</a> 
+								<a class="dropdown-item" href="#" value="Somalia">Somalia</a> 
+								<a class="dropdown-item" href="#" value="South Africa">South Africa</a> 
+								<a class="dropdown-item" href="#" value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</a> 
+								<a class="dropdown-item" href="#" value="Spain">Spain</a> 
+								<a class="dropdown-item" href="#" value="Sri Lanka">Sri Lanka</a> 
+								<a class="dropdown-item" href="#" value="Sudan">Sudan</a> 
+								<a class="dropdown-item" href="#" value="Suriname">Suriname</a> 
+								<a class="dropdown-item" href="#" value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</a> 
+								<a class="dropdown-item" href="#" value="Swaziland">Swaziland</a> 
+								<a class="dropdown-item" href="#" value="Sweden">Sweden</a> 
+								<a class="dropdown-item" href="#" value="Switzerland">Switzerland</a> 
+								<a class="dropdown-item" href="#" value="Syrian Arab Republic">Syrian Arab Republic</a> 
+								<a class="dropdown-item" href="#" value="Taiwan, Province of China">Taiwan, Province of China</a> 
+								<a class="dropdown-item" href="#" value="Tajikistan">Tajikistan</a> 
+								<a class="dropdown-item" href="#" value="Tanzania, United Republic of">Tanzania, United Republic of</a> 
+								<a class="dropdown-item" href="#" value="Thailand">Thailand</a> 
+								<a class="dropdown-item" href="#" value="Timor-leste">Timor-leste</a> 
+								<a class="dropdown-item" href="#" value="Togo">Togo</a> 
+								<a class="dropdown-item" href="#" value="Tokelau">Tokelau</a> 
+								<a class="dropdown-item" href="#" value="Tonga">Tonga</a> 
+								<a class="dropdown-item" href="#" value="Trinidad and Tobago">Trinidad and Tobago</a> 
+								<a class="dropdown-item" href="#" value="Tunisia">Tunisia</a> 
+								<a class="dropdown-item" href="#" value="Turkey">Turkey</a> 
+								<a class="dropdown-item" href="#" value="Turkmenistan">Turkmenistan</a> 
+								<a class="dropdown-item" href="#" value="Turks and Caicos Islands">Turks and Caicos Islands</a> 
+								<a class="dropdown-item" href="#" value="Tuvalu">Tuvalu</a> 
+								<a class="dropdown-item" href="#" value="Uganda">Uganda</a> 
+								<a class="dropdown-item" href="#" value="Ukraine">Ukraine</a> 
+								<a class="dropdown-item" href="#" value="United Arab Emirates">United Arab Emirates</a> 
+								<a class="dropdown-item" href="#" value="United Kingdom">United Kingdom</a> 
 								<a class="dropdown-item" href="#" value="United States">United States</a> 
-									<a class="dropdown-item" href="#" value="United Kingdom">United Kingdom</a> 
-									<a class="dropdown-item" href="#" value="Afghanistan">Afghanistan</a> 
-									<a class="dropdown-item" href="#" value="Albania">Albania</a> 
-									<a class="dropdown-item" href="#" value="Algeria">Algeria</a> 
-									<a class="dropdown-item" href="#" value="American Samoa">American Samoa</a> 
-									<a class="dropdown-item" href="#" value="Andorra">Andorra</a> 
-									<a class="dropdown-item" href="#" value="Angola">Angola</a> 
-									<a class="dropdown-item" href="#" value="Anguilla">Anguilla</a> 
-									<a class="dropdown-item" href="#" value="Antarctica">Antarctica</a> 
-									<a class="dropdown-item" href="#" value="Antigua and Barbuda">Antigua and Barbuda</a> 
-									<a class="dropdown-item" href="#" value="Argentina">Argentina</a> 
-									<a class="dropdown-item" href="#" value="Armenia">Armenia</a> 
-									<a class="dropdown-item" href="#" value="Aruba">Aruba</a> 
-									<a class="dropdown-item" href="#" value="Australia">Australia</a> 
-									<a class="dropdown-item" href="#" value="Austria">Austria</a> 
-									<a class="dropdown-item" href="#" value="Azerbaijan">Azerbaijan</a> 
-									<a class="dropdown-item" href="#" value="Bahamas">Bahamas</a> 
-									<a class="dropdown-item" href="#" value="Bahrain">Bahrain</a> 
-									<a class="dropdown-item" href="#" value="Bangladesh">Bangladesh</a> 
-									<a class="dropdown-item" href="#" value="Barbados">Barbados</a> 
-									<a class="dropdown-item" href="#" value="Belarus">Belarus</a> 
-									<a class="dropdown-item" href="#" value="Belgium">Belgium</a> 
-									<a class="dropdown-item" href="#" value="Belize">Belize</a> 
-									<a class="dropdown-item" href="#" value="Benin">Benin</a> 
-									<a class="dropdown-item" href="#" value="Bermuda">Bermuda</a> 
-									<a class="dropdown-item" href="#" value="Bhutan">Bhutan</a> 
-									<a class="dropdown-item" href="#" value="Bolivia">Bolivia</a> 
-									<a class="dropdown-item" href="#" value="Bosnia and Herzegovina">Bosnia and Herzegovina</a> 
-									<a class="dropdown-item" href="#" value="Botswana">Botswana</a> 
-									<a class="dropdown-item" href="#" value="Bouvet Island">Bouvet Island</a> 
-									<a class="dropdown-item" href="#" value="Brazil">Brazil</a> 
-									<a class="dropdown-item" href="#" value="British Indian Ocean Territory">British Indian Ocean Territory</a> 
-									<a class="dropdown-item" href="#" value="Brunei Darussalam">Brunei Darussalam</a> 
-									<a class="dropdown-item" href="#" value="Bulgaria">Bulgaria</a> 
-									<a class="dropdown-item" href="#" value="Burkina Faso">Burkina Faso</a> 
-									<a class="dropdown-item" href="#" value="Burundi">Burundi</a> 
-									<a class="dropdown-item" href="#" value="Cambodia">Cambodia</a> 
-									<a class="dropdown-item" href="#" value="Cameroon">Cameroon</a> 
-									<a class="dropdown-item" href="#" value="Canada">Canada</a> 
-									<a class="dropdown-item" href="#" value="Cape Verde">Cape Verde</a> 
-									<a class="dropdown-item" href="#" value="Cayman Islands">Cayman Islands</a> 
-									<a class="dropdown-item" href="#" value="Central African Republic">Central African Republic</a> 
-									<a class="dropdown-item" href="#" value="Chad">Chad</a> 
-									<a class="dropdown-item" href="#" value="Chile">Chile</a> 
-									<a class="dropdown-item" href="#" value="China">China</a> 
-									<a class="dropdown-item" href="#" value="Christmas Island">Christmas Island</a> 
-									<a class="dropdown-item" href="#" value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</a> 
-									<a class="dropdown-item" href="#" value="Colombia">Colombia</a> 
-									<a class="dropdown-item" href="#" value="Comoros">Comoros</a> 
-									<a class="dropdown-item" href="#" value="Congo">Congo</a> 
-									<a class="dropdown-item" href="#" value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</a> 
-									<a class="dropdown-item" href="#" value="Cook Islands">Cook Islands</a> 
-									<a class="dropdown-item" href="#" value="Costa Rica">Costa Rica</a> 
-									<a class="dropdown-item" href="#" value="Cote D'ivoire">Cote D'ivoire</a> 
-									<a class="dropdown-item" href="#" value="Croatia">Croatia</a> 
-									<a class="dropdown-item" href="#" value="Cuba">Cuba</a> 
-									<a class="dropdown-item" href="#" value="Cyprus">Cyprus</a> 
-									<a class="dropdown-item" href="#" value="Czech Republic">Czech Republic</a> 
-									<a class="dropdown-item" href="#" value="Denmark">Denmark</a> 
-									<a class="dropdown-item" href="#" value="Djibouti">Djibouti</a> 
-									<a class="dropdown-item" href="#" value="Dominica">Dominica</a> 
-									<a class="dropdown-item" href="#" value="Dominican Republic">Dominican Republic</a> 
-									<a class="dropdown-item" href="#" value="Ecuador">Ecuador</a> 
-									<a class="dropdown-item" href="#" value="Egypt">Egypt</a> 
-									<a class="dropdown-item" href="#" value="El Salvador">El Salvador</a> 
-									<a class="dropdown-item" href="#" value="Equatorial Guinea">Equatorial Guinea</a> 
-									<a class="dropdown-item" href="#" value="Eritrea">Eritrea</a> 
-									<a class="dropdown-item" href="#" value="Estonia">Estonia</a> 
-									<a class="dropdown-item" href="#" value="Ethiopia">Ethiopia</a> 
-									<a class="dropdown-item" href="#" value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</a> 
-									<a class="dropdown-item" href="#" value="Faroe Islands">Faroe Islands</a> 
-									<a class="dropdown-item" href="#" value="Fiji">Fiji</a> 
-									<a class="dropdown-item" href="#" value="Finland">Finland</a> 
-									<a class="dropdown-item" href="#" value="France">France</a> 
-									<a class="dropdown-item" href="#" value="French Guiana">French Guiana</a> 
-									<a class="dropdown-item" href="#" value="French Polynesia">French Polynesia</a> 
-									<a class="dropdown-item" href="#" value="French Southern Territories">French Southern Territories</a> 
-									<a class="dropdown-item" href="#" value="Gabon">Gabon</a> 
-									<a class="dropdown-item" href="#" value="Gambia">Gambia</a> 
-									<a class="dropdown-item" href="#" value="Georgia">Georgia</a> 
-									<a class="dropdown-item" href="#" value="Germany">Germany</a> 
-									<a class="dropdown-item" href="#" value="Ghana">Ghana</a> 
-									<a class="dropdown-item" href="#" value="Gibraltar">Gibraltar</a> 
-									<a class="dropdown-item" href="#" value="Greece">Greece</a> 
-									<a class="dropdown-item" href="#" value="Greenland">Greenland</a> 
-									<a class="dropdown-item" href="#" value="Grenada">Grenada</a> 
-									<a class="dropdown-item" href="#" value="Guadeloupe">Guadeloupe</a> 
-									<a class="dropdown-item" href="#" value="Guam">Guam</a> 
-									<a class="dropdown-item" href="#" value="Guatemala">Guatemala</a> 
-									<a class="dropdown-item" href="#" value="Guinea">Guinea</a> 
-									<a class="dropdown-item" href="#" value="Guinea-bissau">Guinea-bissau</a> 
-									<a class="dropdown-item" href="#" value="Guyana">Guyana</a> 
-									<a class="dropdown-item" href="#" value="Haiti">Haiti</a> 
-									<a class="dropdown-item" href="#" value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</a> 
-									<a class="dropdown-item" href="#" value="Holy See (Vatican City State)">Holy See (Vatican City State)</a> 
-									<a class="dropdown-item" href="#" value="Honduras">Honduras</a> 
-									<a class="dropdown-item" href="#" value="Hong Kong">Hong Kong</a> 
-									<a class="dropdown-item" href="#" value="Hungary">Hungary</a> 
-									<a class="dropdown-item" href="#" value="Iceland">Iceland</a> 
-									<a class="dropdown-item" href="#" value="India">India</a> 
-									<a class="dropdown-item" href="#" value="Indonesia">Indonesia</a> 
-									<a class="dropdown-item" href="#" value="Iran, Islamic Republic of">Iran, Islamic Republic of</a> 
-									<a class="dropdown-item" href="#" value="Iraq">Iraq</a> 
-									<a class="dropdown-item" href="#" value="Ireland">Ireland</a> 
-									<a class="dropdown-item" href="#" value="Israel">Israel</a> 
-									<a class="dropdown-item" href="#" value="Italy">Italy</a> 
-									<a class="dropdown-item" href="#" value="Jamaica">Jamaica</a> 
-									<a class="dropdown-item" href="#" value="Japan">Japan</a> 
-									<a class="dropdown-item" href="#" value="Jordan">Jordan</a> 
-									<a class="dropdown-item" href="#" value="Kazakhstan">Kazakhstan</a> 
-									<a class="dropdown-item" href="#" value="Kenya">Kenya</a> 
-									<a class="dropdown-item" href="#" value="Kiribati">Kiribati</a> 
-									<a class="dropdown-item" href="#" value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</a> 
-									<a class="dropdown-item" href="#" value="Korea, Republic of">Korea, Republic of</a> 
-									<a class="dropdown-item" href="#" value="Kuwait">Kuwait</a> 
-									<a class="dropdown-item" href="#" value="Kyrgyzstan">Kyrgyzstan</a> 
-									<a class="dropdown-item" href="#" value="Lao People's Democratic Republic">Lao People's Democratic Republic</a> 
-									<a class="dropdown-item" href="#" value="Latvia">Latvia</a> 
-									<a class="dropdown-item" href="#" value="Lebanon">Lebanon</a> 
-									<a class="dropdown-item" href="#" value="Lesotho">Lesotho</a> 
-									<a class="dropdown-item" href="#" value="Liberia">Liberia</a> 
-									<a class="dropdown-item" href="#" value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</a> 
-									<a class="dropdown-item" href="#" value="Liechtenstein">Liechtenstein</a> 
-									<a class="dropdown-item" href="#" value="Lithuania">Lithuania</a> 
-									<a class="dropdown-item" href="#" value="Luxembourg">Luxembourg</a> 
-									<a class="dropdown-item" href="#" value="Macao">Macao</a> 
-									<a class="dropdown-item" href="#" value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</a> 
-									<a class="dropdown-item" href="#" value="Madagascar">Madagascar</a> 
-									<a class="dropdown-item" href="#" value="Malawi">Malawi</a> 
-									<a class="dropdown-item" href="#" value="Malaysia">Malaysia</a> 
-									<a class="dropdown-item" href="#" value="Maldives">Maldives</a> 
-									<a class="dropdown-item" href="#" value="Mali">Mali</a> 
-									<a class="dropdown-item" href="#" value="Malta">Malta</a> 
-									<a class="dropdown-item" href="#" value="Marshall Islands">Marshall Islands</a> 
-									<a class="dropdown-item" href="#" value="Martinique">Martinique</a> 
-									<a class="dropdown-item" href="#" value="Mauritania">Mauritania</a> 
-									<a class="dropdown-item" href="#" value="Mauritius">Mauritius</a> 
-									<a class="dropdown-item" href="#" value="Mayotte">Mayotte</a> 
-									<a class="dropdown-item" href="#" value="Mexico">Mexico</a> 
-									<a class="dropdown-item" href="#" value="Micronesia, Federated States of">Micronesia, Federated States of</a> 
-									<a class="dropdown-item" href="#" value="Moldova, Republic of">Moldova, Republic of</a> 
-									<a class="dropdown-item" href="#" value="Monaco">Monaco</a> 
-									<a class="dropdown-item" href="#" value="Mongolia">Mongolia</a> 
-									<a class="dropdown-item" href="#" value="Montserrat">Montserrat</a> 
-									<a class="dropdown-item" href="#" value="Morocco">Morocco</a> 
-									<a class="dropdown-item" href="#" value="Mozambique">Mozambique</a> 
-									<a class="dropdown-item" href="#" value="Myanmar">Myanmar</a> 
-									<a class="dropdown-item" href="#" value="Namibia">Namibia</a> 
-									<a class="dropdown-item" href="#" value="Nauru">Nauru</a> 
-									<a class="dropdown-item" href="#" value="Nepal">Nepal</a> 
-									<a class="dropdown-item" href="#" value="Netherlands">Netherlands</a> 
-									<a class="dropdown-item" href="#" value="Netherlands Antilles">Netherlands Antilles</a> 
-									<a class="dropdown-item" href="#" value="New Caledonia">New Caledonia</a> 
-									<a class="dropdown-item" href="#" value="New Zealand">New Zealand</a> 
-									<a class="dropdown-item" href="#" value="Nicaragua">Nicaragua</a> 
-									<a class="dropdown-item" href="#" value="Niger">Niger</a> 
-									<a class="dropdown-item" href="#" value="Nigeria">Nigeria</a> 
-									<a class="dropdown-item" href="#" value="Niue">Niue</a> 
-									<a class="dropdown-item" href="#" value="Norfolk Island">Norfolk Island</a> 
-									<a class="dropdown-item" href="#" value="Northern Mariana Islands">Northern Mariana Islands</a> 
-									<a class="dropdown-item" href="#" value="Norway">Norway</a> 
-									<a class="dropdown-item" href="#" value="Oman">Oman</a> 
-									<a class="dropdown-item" href="#" value="Pakistan">Pakistan</a> 
-									<a class="dropdown-item" href="#" value="Palau">Palau</a> 
-									<a class="dropdown-item" href="#" value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</a> 
-									<a class="dropdown-item" href="#" value="Panama">Panama</a> 
-									<a class="dropdown-item" href="#" value="Papua New Guinea">Papua New Guinea</a> 
-									<a class="dropdown-item" href="#" value="Paraguay">Paraguay</a> 
-									<a class="dropdown-item" href="#" value="Peru">Peru</a> 
-									<a class="dropdown-item" href="#" value="Philippines">Philippines</a> 
-									<a class="dropdown-item" href="#" value="Pitcairn">Pitcairn</a> 
-									<a class="dropdown-item" href="#" value="Poland">Poland</a> 
-									<a class="dropdown-item" href="#" value="Portugal">Portugal</a> 
-									<a class="dropdown-item" href="#" value="Puerto Rico">Puerto Rico</a> 
-									<a class="dropdown-item" href="#" value="Qatar">Qatar</a> 
-									<a class="dropdown-item" href="#" value="Reunion">Reunion</a> 
-									<a class="dropdown-item" href="#" value="Romania">Romania</a> 
-									<a class="dropdown-item" href="#" value="Russian Federation">Russian Federation</a> 
-									<a class="dropdown-item" href="#" value="Rwanda">Rwanda</a> 
-									<a class="dropdown-item" href="#" value="Saint Helena">Saint Helena</a> 
-									<a class="dropdown-item" href="#" value="Saint Kitts and Nevis">Saint Kitts and Nevis</a> 
-									<a class="dropdown-item" href="#" value="Saint Lucia">Saint Lucia</a> 
-									<a class="dropdown-item" href="#" value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</a> 
-									<a class="dropdown-item" href="#" value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</a> 
-									<a class="dropdown-item" href="#" value="Samoa">Samoa</a> 
-									<a class="dropdown-item" href="#" value="San Marino">San Marino</a> 
-									<a class="dropdown-item" href="#" value="Sao Tome and Principe">Sao Tome and Principe</a> 
-									<a class="dropdown-item" href="#" value="Saudi Arabia">Saudi Arabia</a> 
-									<a class="dropdown-item" href="#" value="Senegal">Senegal</a> 
-									<a class="dropdown-item" href="#" value="Serbia and Montenegro">Serbia and Montenegro</a> 
-									<a class="dropdown-item" href="#" value="Seychelles">Seychelles</a> 
-									<a class="dropdown-item" href="#" value="Sierra Leone">Sierra Leone</a> 
-									<a class="dropdown-item" href="#" value="Singapore">Singapore</a> 
-									<a class="dropdown-item" href="#" value="Slovakia">Slovakia</a> 
-									<a class="dropdown-item" href="#" value="Slovenia">Slovenia</a> 
-									<a class="dropdown-item" href="#" value="Solomon Islands">Solomon Islands</a> 
-									<a class="dropdown-item" href="#" value="Somalia">Somalia</a> 
-									<a class="dropdown-item" href="#" value="South Africa">South Africa</a> 
-									<a class="dropdown-item" href="#" value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</a> 
-									<a class="dropdown-item" href="#" value="Spain">Spain</a> 
-									<a class="dropdown-item" href="#" value="Sri Lanka">Sri Lanka</a> 
-									<a class="dropdown-item" href="#" value="Sudan">Sudan</a> 
-									<a class="dropdown-item" href="#" value="Suriname">Suriname</a> 
-									<a class="dropdown-item" href="#" value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</a> 
-									<a class="dropdown-item" href="#" value="Swaziland">Swaziland</a> 
-									<a class="dropdown-item" href="#" value="Sweden">Sweden</a> 
-									<a class="dropdown-item" href="#" value="Switzerland">Switzerland</a> 
-									<a class="dropdown-item" href="#" value="Syrian Arab Republic">Syrian Arab Republic</a> 
-									<a class="dropdown-item" href="#" value="Taiwan, Province of China">Taiwan, Province of China</a> 
-									<a class="dropdown-item" href="#" value="Tajikistan">Tajikistan</a> 
-									<a class="dropdown-item" href="#" value="Tanzania, United Republic of">Tanzania, United Republic of</a> 
-									<a class="dropdown-item" href="#" value="Thailand">Thailand</a> 
-									<a class="dropdown-item" href="#" value="Timor-leste">Timor-leste</a> 
-									<a class="dropdown-item" href="#" value="Togo">Togo</a> 
-									<a class="dropdown-item" href="#" value="Tokelau">Tokelau</a> 
-									<a class="dropdown-item" href="#" value="Tonga">Tonga</a> 
-									<a class="dropdown-item" href="#" value="Trinidad and Tobago">Trinidad and Tobago</a> 
-									<a class="dropdown-item" href="#" value="Tunisia">Tunisia</a> 
-									<a class="dropdown-item" href="#" value="Turkey">Turkey</a> 
-									<a class="dropdown-item" href="#" value="Turkmenistan">Turkmenistan</a> 
-									<a class="dropdown-item" href="#" value="Turks and Caicos Islands">Turks and Caicos Islands</a> 
-									<a class="dropdown-item" href="#" value="Tuvalu">Tuvalu</a> 
-									<a class="dropdown-item" href="#" value="Uganda">Uganda</a> 
-									<a class="dropdown-item" href="#" value="Ukraine">Ukraine</a> 
-									<a class="dropdown-item" href="#" value="United Arab Emirates">United Arab Emirates</a> 
-									<a class="dropdown-item" href="#" value="United Kingdom">United Kingdom</a> 
-									<a class="dropdown-item" href="#" value="United States">United States</a> 
-									<a class="dropdown-item" href="#" value="United States Minor Outlying Islands">United States Minor Outlying Islands</a> 
-									<a class="dropdown-item" href="#" value="Uruguay">Uruguay</a> 
-									<a class="dropdown-item" href="#" value="Uzbekistan">Uzbekistan</a> 
-									<a class="dropdown-item" href="#" value="Vanuatu">Vanuatu</a> 
-									<a class="dropdown-item" href="#" value="Venezuela">Venezuela</a> 
-									<a class="dropdown-item" href="#" value="Viet Nam">Viet Nam</a> 
-									<a class="dropdown-item" href="#" value="Virgin Islands, British">Virgin Islands, British</a> 
-									<a class="dropdown-item" href="#" value="Virgin Islands, U.S.">Virgin Islands, U.S.</a> 
-									<a class="dropdown-item" href="#" value="Wallis and Futuna">Wallis and Futuna</a> 
-									<a class="dropdown-item" href="#" value="Western Sahara">Western Sahara</a> 
-									<a class="dropdown-item" href="#" value="Yemen">Yemen</a> 
-									<a class="dropdown-item" href="#" value="Zambia">Zambia</a> 
-									<a class="dropdown-item" href="#" value="Zimbabwe">Zimbabwe</a>
-							    <!-- countris end -->
-							  </div>
-							</li>
-						</ol>
-					</div>
+								<a class="dropdown-item" href="#" value="United States Minor Outlying Islands">United States Minor Outlying Islands</a> 
+								<a class="dropdown-item" href="#" value="Uruguay">Uruguay</a> 
+								<a class="dropdown-item" href="#" value="Uzbekistan">Uzbekistan</a> 
+								<a class="dropdown-item" href="#" value="Vanuatu">Vanuatu</a> 
+								<a class="dropdown-item" href="#" value="Venezuela">Venezuela</a> 
+								<a class="dropdown-item" href="#" value="Viet Nam">Viet Nam</a> 
+								<a class="dropdown-item" href="#" value="Virgin Islands, British">Virgin Islands, British</a> 
+								<a class="dropdown-item" href="#" value="Virgin Islands, U.S.">Virgin Islands, U.S.</a> 
+								<a class="dropdown-item" href="#" value="Wallis and Futuna">Wallis and Futuna</a> 
+								<a class="dropdown-item" href="#" value="Western Sahara">Western Sahara</a> 
+								<a class="dropdown-item" href="#" value="Yemen">Yemen</a> 
+								<a class="dropdown-item" href="#" value="Zambia">Zambia</a> 
+								<a class="dropdown-item" href="#" value="Zimbabwe">Zimbabwe</a>
+						    <!-- countris end -->
+						  </div>
+						</li>
+					</ol>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<section id="country-info">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<img src="img/france.png" alt="" class="img-fluid country">
-					</div>
-					<div class="col text-left">
-						<img src="img/france_flag.png" alt="" class="img-fluid flag"><h3 class="map-text">France</h3>
-						<p><span class="map-text">France</span> has a mixed economy that combines extensive private enterprise with substantial state enterprise and government intervention. The government retains considerable influence over key segments of infrastructure sectors, with majority ownership of railway, electricity, aircraft, nuclear power and telecommunications.</p>
+	<section id="country-info">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<img src="img/france.png" alt="" class="img-fluid country">
+				</div>
+				<div class="col text-left">
+					<img src="img/france_flag.png" alt="" class="img-fluid flag"><h3 class="map-text">France</h3>
+					<p><span class="map-text">France</span> has a mixed economy that combines extensive private enterprise with substantial state enterprise and government intervention. The government retains considerable influence over key segments of infrastructure sectors, with majority ownership of railway, electricity, aircraft, nuclear power and telecommunications.</p>
 
 <p>It has been relaxing its control over these sectors since the early 1990s. The government is slowly corporatising the state sector and selling off holdings in <span class="map-text">France</span> Télécom, Air <span class="map-text">France</span>, as well as in the insurance, banking, and defence industries. <span class="map-text">France</span> has an important aerospace industry led by the European consortium Airbus, and has its own national spaceport. </p>
 
 <p>Would you like to sell you product / service in <span class="map-text">France</span>? </p>
-					<a href="#" class="btn btn-green">Globalize now</a>
+				<a href="#" class="btn btn-green">Globalize now</a>
+				</div>
+				<hr>
+			</div>
+		</div>
+	</section>
+	
+	<section id="numbers">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mx-auto">
+					<h3>France in Numbers</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<div class="numbers-item">
+						<h3>3,5 mil.</h3>
+						<p>Country Population</p>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="numbers-item">
+						<h3>3,5 mil.</h3>
+						<p>Country Population</p>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="numbers-item">
+						<h3>3,5 mil.</h3>
+						<p>Country Population</p>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="numbers-item">
+						<h3>3,5 mil.</h3>
+						<p>Country Population</p>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="numbers-item">
+						<h3>1450 EUR</h3>
+						<p>Average Online Spend
+per 1 Shopper</p>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="numbers-item">
+						<h3>3,5 mil.</h3>
+						<p>Country Population</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		
-		<section id="blank">
-			<div class="container">
+		</div>
+	</section>
+
+	<section id="markets">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6 mx-auto">
+					<h3>Specialities of the Markets in France </h3>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<div class="markets-item green">
+						<div class="row">
+							<div class="col">
+								<h3>MEGA FACT</h3>
+							</div>
+							<div class="col"><img src="img/markets/check.png" alt="" class="img-fluid markets-image"></div>
+						</div>
+						<p class="markets-text">We will give you an approximate monthly man-hours needed to work on your project and invoice you the real amount. If there will be more hours needed to work on the project, we will inform you upfront. We can modify the hours spent on different tasks and services on the go.</p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="markets-item orange">
+						<div class="row">
+							<div class="col">
+								<h3>MEGA FACT</h3>
+							</div>
+							<div class="col"><img src="img/markets/check.png" alt="" class="img-fluid markets-image"></div>
+						</div>
+						<p class="markets-text">We will give you an approximate monthly man-hours needed to work on your project and invoice you the real amount. If there will be more hours needed to work on the project, we will inform you upfront. We can modify the hours spent on different tasks and services on the go.</p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="markets-item red">
+						<div class="row">
+							<div class="col">
+								<h3>MEGA FACT</h3>
+							</div>
+							<div class="col"><img src="img/markets/check.png" alt="" class="img-fluid markets-image"></div>
+						</div>
+						<p class="markets-text">We will give you an approximate monthly man-hours needed to work on your project and invoice you the real amount. If there will be more hours needed to work on the project, we will inform you upfront. We can modify the hours spent on different tasks and services on the go.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="country-services">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6 mx-auto">
+					<h3>Services Available in France</h3>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-10 mx-auto">
+					<div class="row">
+						<div class="col-6">
+							<div class="services-item">
+								<div class="services-item-img">
+									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
+								</div>
+								<div class="country-services-caption">
+									<h5>Web Development & IT infrastructure</h5>
+									<p>Own warehouse, and cooperation with DHL</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="services-item">
+								<div class="services-item-img">
+									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
+								</div>
+								
+								<div class="country-services-caption">
+									<h5>Web Development & IT infrastructure</h5>
+									<p>Own warehouse, and cooperation with DHL</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="services-item">
+								<div class="services-item-img">
+									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
+								</div>
+								<div class="country-services-caption">
+									<h5>Web Development & IT infrastructure</h5>
+									<p>Own warehouse, and cooperation with DHL</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="services-item">
+								<div class="services-item-img">
+									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
+								</div>
+								<div class="country-services-caption">
+									<h5>Web Development & IT infrastructure</h5>
+									<p>Own warehouse, and cooperation with DHL</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="services-item">
+								<div class="services-item-img">
+									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
+								</div>
+								<div class="country-services-caption">
+									<h5>Web Development & IT infrastructure</h5>
+									<p>Own warehouse, and cooperation with DHL</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="services-item">
+								<div class="services-item-img">
+									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
+								</div>
+								<div class="country-services-caption">
+									<h5>Web Development & IT infrastructure</h5>
+									<p>Own warehouse, and cooperation with DHL</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p>Do you have a question about France?</p>
+					<a href="#" class="btn btn-green" data-toggle="modal" data-target="#myModal">Contact us</a>
+				<!-- 	<a class="btn btn-green" data-toggle="modal" data-target="#myModal">
+					  Open modal
+					</a> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="contact-menu">
+			<div class="contact-container">
 				<div class="row">
-					<div class="col-lg-8 mx-auto">
-						<h3>Blank Section</h3>
+					<div class="col-12 col-lg-6">
+						<h3>Contact us</h3>
+					</div>
+					<!-- <div class="contact-close"></aa> -->
+					<button class="contact-close"><img src="img/Contact/close.png" alt=""></button>
+				</div>
+				<div class="row">
+					<div class="col-6 col-contact">
+						<div class="contact-item">
+							<h6>Central and East Europe Office</h6>
+							<p>Staré Grunty 18 <br> 841 08 Bratislava <br> SLOVAKIA</p>
+						</div>
+					</div>
+					<div class="col-6 col-contact">
+						<div class="contact-item">
+							<h6>Central and East Europe Office</h6>
+							<p>Staré Grunty 18 <br> 841 08 Bratislava <br> SLOVAKIA</p>
+						</div>
+					</div>
+					<div class="col-6 col-contact">
+						<div class="contact-item">
+							<h6>Central and East Europe Office</h6>
+							<p>Staré Grunty 18 <br> 841 08 Bratislava <br> SLOVAKIA</p>
+						</div>
+					</div>
+					<div class="col-6 col-contact">
+						<div class="contact-item">
+							<h6>Central and East Europe Office</h6>
+							<p>Staré Grunty 18 <br> 841 08 Bratislava <br> SLOVAKIA</p>
+						</div>
+					</div>
+					<div class="col-6 col-contact">
+						<div class="contact-item">
+							<h6>Central and East Europe Office</h6>
+							<p>Staré Grunty 18 <br> 841 08 Bratislava <br> SLOVAKIA</p>
+						</div>
+					</div>
+					<div class="col-6 col-contact">
+						<div class="contact-item">
+							<h6>Central and East Europe Office</h6>
+							<p>Staré Grunty 18 841 08 Bratislava SLOVAKIA</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>	
 
-		<!-- Footer -->
-		<footer class="py-5 bg-dark">
-			<div class="container">
-				<p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+	<!-- The Modal -->
+	<div class="modal fade" id="myModal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+
+	      <!-- Modal Header -->
+	      <!-- <div class="modal-header">
+	        <h4 class="modal-title">Modal Heading</h4>
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div> -->
+
+	      <!-- Modal body -->
+	      <div class="modal-body">
+	       <h4>First consultation is always free</h4>
+	        <form>
+		        <div class="form-group">
+		        	<input type="text" class="form-control" id="pwd" placeholder="Your Name">
+		        </div>
+
+	        	<div class="form-group">
+	        		<input type="email" class="form-control" id="email" placeholder="E-Mail">
+	        	</div>
+	      
+	        	<div class="form-group">
+	        		<input type="text" class="form-control" id="pwd" placeholder="Phone">
+	        	</div>
+
+	        	<div class="form-group">
+	        	   <!-- <label for="exampleSelect1">Example select</label> -->
+	        	   <select class="form-control select-placeholder" id="exampleSelect1" placeholder="Message">
+	        	     <option value="" selected disabled>Service</option>
+	        	     <option>2</option>
+	        	     <option>3</option>
+	        	     <option>4</option>
+	        	     <option>5</option>
+	        	   </select>
+	        	 </div>
+
+	        	 <div class="form-group">
+	        	    
+	        	     <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Message"></textarea>
+	        	   </div>
+
+			<div class="text-center">
+	        	<button type="submit" class="btn btn-green button-green-small">Submit</button>
+	        </div>
+	        </form>
+	      </div>
+
+	      <!-- Modal footer -->
+<!-- 	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div> -->
+
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row  h-100">
+				<div class="col-12 col-sm-6 text-center text-sm-left my-auto"><img src="img/footer-logo.png" width="122" height="37" class="img-fluid" alt=""></div>
+				<div class="col-12 col-sm-6 text-center text-sm-right my-auto"><a href="#">Terms of service</a><a href="#">Contact us</a></div>
 			</div>
-			<!-- /.container -->
-		</footer>
+		</div>	        
+	</footer>
 
-		<!-- Bootstrap core JavaScript -->
-		
+	<!-- Bootstrap core JavaScript -->
+	
 
 
-		<!-- Plugin JavaScript -->
-		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-		<script>
+	<!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	<script>
 
-		</script>
-		<!-- Custom JavaScript for this theme -->
-		<script src="js/main.js"></script>
-	</body>
+	</script>
+	<!-- Custom JavaScript for this theme -->
+	<script src="js/main.js"></script>
+</body>
 
 </html>

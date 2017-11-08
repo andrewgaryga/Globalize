@@ -1,0 +1,231 @@
+/*--------------------------------------------------------------
+# Locations Page
+--------------------------------------------------------------*/
+
+/* Map */
+.map-wrapper {
+	overflow-x: hidden;
+}
+
+.map-nav, #map-nav-mobile {
+	background-color: #f0f7fb;
+}
+#map1, .map-nav,.map-wrapper {
+	display: none;
+}
+// map responsive 
+@media only screen and (min-width: 992px) {
+	#map1, .map-nav,.map-wrapper {
+		display: inherit;
+	}
+}
+/* Map End*/
+
+/* Navigation */
+.breadcrumb {
+	font-family: 'Futura T OT Medium', sans-serif;
+	font-size: 17px;
+	background-color: transparent;
+	margin-bottom: 0;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+	.breadcrumb-item {
+		
+	}
+	.breadcrumb-item.active {
+		font-family: 'Futura T OT Bold', sans-serif;
+		color: #5bbf40;
+		cursor: pointer;
+	}
+	.breadcrumb-item+.breadcrumb-item::before {
+		content: ">";
+		padding-left: 36px;
+		padding-right: 36px;
+		color: #5bbf40;
+		opacity: 0;
+		-webkit-transition: opacity .6s;
+		transition: opacity .6s;
+	}
+	.breadcrumb-item.green+.breadcrumb-item.green::before {
+		opacity: 1;
+	}
+	.breadcrumb a {
+		color: #425a69;
+	}
+
+#map-nav-mobile {
+	text-align: center;
+}
+	#map-nav-mobile .dropdown-toggle{
+		background-color: transparent;
+		border: transparent;
+	}
+	#map-nav-mobile .breadcrumb {
+		display: inline-flex;
+	}
+	#map-nav-mobile  span#selected {
+		font-family: 'Futura T OT Bold', sans-serif;
+		color: #5bbf40;
+	}
+	#map-nav-mobile .dropdown-toggle::after {
+		color: #5bbf40;
+	}
+	.breadcrumb-mobile+.breadcrumb-mobile::before {
+		padding-left: 23px;
+		padding-right: 23px;
+	}
+	@media only screen and (min-width: 768px) {
+		.breadcrumb-mobile+.breadcrumb-mobile::before {
+			padding-left: 36px;
+			padding-right: 36px;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		#map-nav-mobile {
+			display: none;
+		}
+	}
+/* Navigation End*/
+
+/* Country info */
+#country-info p {
+	font-family: 'Futura T OT Book', sans-serif;
+	font-size: 14px;
+	color: #6c6c6c;
+}
+	#country-info .col:nth-child(1){
+		display: none;
+	}
+	img.flag{
+		display: none;
+	}
+	@media only screen and (min-width: 768px) {
+		#country-info .col:nth-child(1){
+			display: block;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		#country-info p {
+			font-size: 17px;
+		}
+	}
+/* Country info End*/
+
+#numbers {
+	.numbers-item{
+		text-align: center;
+		background-color: #f0f7fb;
+		padding: 48px 5px;
+		max-height: 185px;
+		h3 {
+			font-size: 34px;
+			font-family: 'Futura T OT Bold', sans-serif;
+			color: #51bb30;
+		}
+		p {
+			font-family: 'Futura T OT Demi', sans-serif;
+
+		}
+		
+
+	}
+
+
+}
+
+#markets {
+	.markets-item {
+		-moz-box-shadow: 0 0 27px #c3cfd6; 
+		-webkit-box-shadow: 0 0 27px #c3cfd6; 
+		box-shadow: 0 0 27px #c3cfd6; 
+		padding: 40px 40px 95px 40px;
+		height: 410px;
+		& h3 {
+			font-family: 'Futura T OT Bold', sans-serif;
+			font-size: 37.6px;	
+
+		}
+		&.green h3 {
+			color: #51bc31;
+		}
+		&.orange h3 {
+			color: #ffc000;
+		}
+		&.red h3 {
+			color: #dd0039;
+		}
+		img.markets-image {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform:translate(-50%,-50%);
+
+		}
+		p {
+			&.markets-text {
+				margin-top: 38px;
+				line-height: 1.2;
+			}
+		}
+	}
+}
+
+#country-services {
+	.country-services-caption, .services-item-img{
+		display: inline-block;
+	}
+	.services-item {
+		h5 {
+			color: #51bc31;
+			padding-top: 18px;
+			margin-bottom: 2px;
+			font-size: 18px;
+			font-family: 'Futura T OT Demi', sans-serif;
+		}
+		.services-item-img{
+			margin-right: 16px;
+			img {
+				height: 75px;
+			}
+		}
+	}
+	
+}
+/* Pixel Perfect*/
+@media only screen and (min-width: 1260px) {
+	.breadcrumb {
+		padding: 27px 0;
+	}
+	section#country-info{
+		padding: 48px 0;
+	}
+		h3.map-text {
+			display: inline-block;
+			margin-bottom: 13px;
+		}
+		img.flag {
+			display: inline;
+			margin-top: -28px;
+		    margin-left: 2px;
+		    margin-right: 15px;
+		    width: 57px;
+		    height: 36px;
+		}
+		img.country{
+			
+			padding-left: 28px;
+			padding-top: 14px;
+		}
+		section#country-info p{
+			word-spacing: -1.2px;
+			line-height: 130%;
+			width: 91%;
+		}
+		section#country-info .btn-green{
+			margin-top: 21px;
+			padding-left: 46px;
+		}
+
+}
+/* Pixel Perfect End*/

@@ -1,0 +1,345 @@
+#about_cta, #process {
+	border-bottom: 1px solid rgba(189, 189, 189, 0.79);
+	box-shadow: 0 5px 10px rgba(189, 189, 189, 0.69);
+}
+#about_cta {
+	padding: 35px 0 45px 0;
+	p {
+		font-size: 19px;
+		font-family: 'Futura T OT Light', sans-serif;
+	}
+	h5 {
+		font-family: 'Futura T OT Light', sans-serif;
+		font-size: 25px;
+		margin-top: 35px;
+		margin-bottom: 15px;
+		color: #030237;
+	}
+}
+@media only screen and (min-width: 768px) {
+	#about_cta {
+		padding: 55px 0 39px 0;
+	}
+}
+@media only screen and (min-width: 992px) {
+	#about_cta {
+		p {
+			text-align: left;
+			padding-right: 20px;
+		}
+		h5 { 
+			margin-top: 0;
+		}
+	}
+}
+
+#process {
+	padding: 50px 0 40px 0;
+	h3 {
+		color: #030237;
+	}
+	.timeline {
+	    position: relative;
+	    padding: 1px 0 0 0;
+	    margin-top: 50px;
+	    &:before {
+		    position: absolute;
+		    top: 1px;
+		    bottom: 0;
+		    left: 50%;
+		    width: 3px;
+		    margin-left: -1.5px;
+		    content: '';
+		    background-color: #030237;
+		}
+		.card {
+			// width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			margin-top: 41px;
+			border-color: #fff;
+			&:first-child {
+				padding-top: 0;
+				margin-top: 0;
+			}
+		}
+		.card-title {
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+		.card-text {
+			letter-spacing: 0.02em;
+		}
+		.sub-heading {
+			font-size: 22px;
+			color: #51bc31;
+			margin-bottom: 11px;
+		}
+	}
+}
+@media only screen and (min-width: 768px) {
+	#process {
+		padding: 50px 0 50px 0;
+		h3 {
+			margin-bottom: 20px;
+		}
+		.timeline {
+			.sub-heading {
+				margin-bottom: 20px;
+			}
+			.card {
+				width: 500px;
+				padding-top: 39px;
+				padding-bottom: 34px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	#process {
+		padding: 60px 0 50px 0;
+		.timeline {
+			margin-top: 60px;
+
+		}
+	}
+}
+
+@media only screen and (min-width: 1260px) {
+	#process {
+		.timeline {
+			margin-top: 60px;
+		}
+	}
+}
+
+#about_stories {
+	padding: 30px 0 10px 0;
+	padding-top: 75px;
+	h3 {
+		color: #030237;
+		margin-bottom: 15px;
+	}
+	.testimonials-item {
+		h5 {	
+			font-family: 'Futura T OT Demi', sans-serif;
+			font-size: 22px;
+			color: #51bc31;
+			margin-top: 20px;
+		}
+		p {
+			margin-bottom: 40px;
+			&.sub-heading {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 768px) {
+	#about_stories {
+		padding: 30px 0 20px 0;
+		.testimonials-item {
+			margin-top: 40px;
+			h5 {
+				margin-top: 30px;
+			}
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#about_stories {
+		padding: 60px 0 60px 0;
+		h3 {
+			margin-bottom: 40px;
+		}
+		.img-wrap {
+			margin-right: 15px;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-align: center;
+			align-items: center;
+			min-height: 250px;
+			-moz-box-shadow: 0 0 27px #c3cfd6; 
+			-webkit-box-shadow: 0 0 27px #c3cfd6; 
+			box-shadow: 0 0 27px #c3cfd6; 
+			img {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.text-wrap {
+			margin-left: 15px;
+			text-align: left;
+		}
+	}
+}
+
+@media only screen and (min-width: 1260px) {
+	#about_stories {
+		h3 {
+			margin-bottom: 60px;
+		}
+		padding: 70px 0 200px 0;
+		.img-wrap {
+			margin-right: 35px;
+		}
+		.text-wrap {
+			margin-left: 35px;
+		}	
+		.testimonials-item {
+			margin-top: 70px;
+		}
+	}
+}
+
+#consultation {
+	padding: 50px 0 70px 0;
+	background-color: #f0f7fb;
+	h3 {
+		color: #030237;
+	}
+	.card {
+		border-radius: 0;
+		margin-top: 60px;
+		margin-left: -16px;
+		margin-right: -16px;
+		-moz-box-shadow: 0 0 27px #c3cfd6; 
+		-webkit-box-shadow: 0 0 27px #c3cfd6; 
+		box-shadow: 0 0 27px #c3cfd6; 
+		.photo {
+			display: none;
+			width: 350px;
+			height: 370px;
+			.card-img-left {
+				color: #fff;
+				height: 100%;
+				background: url(../img/consultation/photo.jpg) center no-repeat;
+				background-size: cover;
+			}
+		}
+		.card-block {
+		    padding: 70px 25px 20px 25px;
+			form {
+				.form-control {
+					padding: 0;
+					margin-bottom: 41px;
+				}
+				.form-control, .form-control:hover, .form-control:focus {
+				    border: none;
+				    border-bottom: 1px solid #c6cdd2;
+				    color: #425a69;
+				    border-radius: 0;
+				}
+				.form-control::-moz-placeholder {
+				  color:  #425a69;
+				  opacity: 1;
+				}
+				.form-control:-ms-input-placeholder {
+				  color:  #425a69;
+				}
+				.form-control::-webkit-input-placeholder {
+				  color:  #425a69;
+				}
+				input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+				    background-color: transparent;
+				}
+				.btn-green {
+					z-index: 1;
+					font-size: 16.3px;
+					&:before {
+						top: 8px;
+						width: 161px;
+						height: 45px;
+						background-image: url(../img/button-green-small.png);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#consultation {
+		.card {
+			margin-top: 40px;
+			width: 540px;
+			margin-left: auto;
+			margin-right: auto;
+			.card-block {
+				padding: 50px 50px 20px 50px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#consultation {
+		.card {
+			width: 770px;
+			margin-left: auto;
+			margin-right: auto;
+			.photo {
+				display: block;
+				width: 340px;
+				height: 400px;
+				margin-left: 15px;
+				position: relative;
+				.card-img-caption {
+				position: absolute;
+				bottom: 5px;
+				left: 50%;
+				transform: translateX(-50%);
+				color: #fff;
+					h4 {
+						font-family: 'Futura T OT Demi', sans-serif;
+						font-size: 22px;
+						color: #fff;
+					}
+					p {
+						font-size: 18px;
+					}
+				}
+				.card-img-left {
+				}
+			}
+			.card-block {
+				padding: 75px 51px 30px 24px;
+				form {
+					.form-control {
+						margin-bottom: 50px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1260px) {
+	#consultation {
+		.consultation-heading {
+			h3, p {
+				padding: 0 70px;
+			}
+		}
+		.card {
+			.photo {
+				.card-img-left {
+				}
+			}
+			.card-block {
+				padding-top: 62px;
+				padding-left: 24px;
+				padding-right: 51px;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,228 @@
+#services {
+	text-align: left;
+	padding-top: 0;
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 18px 5px 40px 5px;
+		.nav-item {
+			width: 49%;
+			background-color: #f0f7fb;
+			margin-bottom: 8px;
+			display: flex;
+			align-items: center;
+			min-height: 53px;
+			.nav-link {
+				color: #51bc31;
+				font-size: 15px;
+				text-align: center;
+				width: 100%;
+				display: inline-flex;
+				align-items: center;
+				width: 100%;
+				justify-content: center;
+				&.active {
+					font-family: 'Futura T OT Bold', sans-serif;
+					color: #fff;
+					background-color: #51bc31;
+					min-height: 53px;
+				}
+			}
+		}
+	}
+	.tab-content {
+		.tab-pane {
+			h2 {
+				color: #030237;
+				margin-bottom: 20px;
+			}
+			h4 {
+				margin-top: 30px;
+				margin-bottom: 20px;
+				color: #444649;
+			}
+			img {
+				margin-top: 10px;
+			}
+		}
+	}
+	#services-foter {
+		h5 {
+			font-size: 22px;
+			font-family: 'Futura T OT Medium', sans-serif;
+			color: #444649;
+			padding-left: 5px;
+			margin-top: 20px;
+		}
+	}
+}
+@media only screen and (min-width: 768px) {
+	#services {
+		.services-navigation { width: 100%;}
+		.nav { 
+			margin-left: auto;
+			margin-right: auto;
+			width: 630px;
+			.nav-item {
+				width: 200px;
+				&.active {
+
+				}
+			}
+		}
+		.tab-content {
+			.tab-pane {
+				padding-right: 40px;
+				padding-left: 40px;
+				h2 {
+					margin-bottom: 0px;
+				}
+			}
+		}
+		#services-foter {
+			h5 {
+				padding-left: 50px;
+			}
+		}
+	}
+}
+
+// @media only screen and (min-width: 992px) {
+// 	#services {
+// 		.nav {
+// 			background-color: #f0f7fb;
+// 			padding-top: 47px;
+// 			padding-bottom: 43px;
+// 		}
+// 		.services-navigation {
+// 			width: 370px;
+// 		}
+// 		.nav-item {
+// 			padding-left: 60px;
+// 			padding-right: 67px;
+// 			.nav-link {
+// 				color: #51bc31;
+// 				font-size: 18px;
+// 				border-bottom: 1px solid #cfd5d9;
+// 				padding: 18px 30px;
+// 				&.active {
+// 					position: relative;
+// 					font-family: 'Futura T OT Bold', sans-serif;
+// 					border-bottom: 4px solid #51bc31;
+// 					// padding: 11px 30px;
+// 					&:after {
+// 						content: ">";
+// 						right: 0;
+// 						color: #5bbf40;
+// 						position: absolute;
+// 						top: 50%;
+// 						transform: translateY(-50%);
+// 					}
+// 				}
+// 			}
+// 			&:last-child .nav-link{
+// 					border-bottom: 1px solid transparent;
+// 				}
+// 		}
+// 		.tab-content {
+// 			padding-left: 55px;
+// 			h2 {
+// 				padding-top: 43px;
+// 				padding-bottom: 25px;
+// 			}
+// 		}
+// 	}
+// }
+
+// @media only screen and (min-width: 768px) {
+// 	#services {
+// 		.services-navigation { width: 100%;}
+// 		.nav {
+// 			padding: 37px 0 43px 0;
+// 			.nav-item {
+// 			    padding-left: 35px;
+// 			    padding-right: 43px;
+// 			}
+// 		}
+// 		.tab-content {
+// 			padding-left: 25px;
+// 			.tab-pane {
+// 				h2 {
+// 					margin-bottom: 0px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+@media only screen and (min-width: 992px) {
+	#services {
+		.services-navigation {
+			width: 370px;
+		}
+		.nav {
+			background-color: #f0f7fb;
+			padding: 47px 0 43px 0;
+			margin-left: 0;
+			margin-right: 0;
+			width: auto;
+			.nav-item {
+				display: block;
+				padding-left: 60px;
+				padding-right: 67px;
+				width: auto;
+				background-color: transparent;
+			    margin-bottom: 0;
+			    display: list-item;
+			    align-items: normal;
+			    min-height: auto;
+				.nav-link {
+					color: #51bc31;
+					font-size: 18px;
+					border-bottom: 1px solid #cfd5d9;
+					padding: 18px 30px;
+					text-align: left;
+					&.active {
+						position: relative;
+						font-family: 'Futura T OT Bold', sans-serif;
+						border-bottom: 4px solid #51bc31;
+						color: #51bc31;
+						background-color: transparent;
+						// padding: 11px 30px;
+						&:after {
+							content: ">";
+							right: 0;
+							color: #5bbf40;
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+						}
+					}
+				}
+				&:last-child .nav-link{
+						border-bottom: 1px solid transparent;
+					}
+			}
+		}
+		.tab-content {
+			padding-left: 55px;
+			h2 {
+				padding-top: 43px;
+				padding-bottom: 25px;
+			}
+			.tab-pane {
+				padding-right: 0px;
+				padding-left: 0px;
+				h4 {
+					margin-top: 40px;
+				}
+				img {
+					margin-top: 40px;
+				}
+			}
+		}
+		#services-foter {
+			display: none;
+		}
+	}
+}

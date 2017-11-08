@@ -1,0 +1,74 @@
+.modal {
+	.modal-body {
+		padding: 26px 60px 6px 60px;
+	}
+	.modal-content {
+		border-radius: 0;
+		background-color: #f0f7fb;
+		border-color: #f0f7fb;
+	}
+	h4 {
+		font-family: 'Futura T OT Medium', sans-serif;
+		font-size: 25px;
+		color: #51bb30;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	select.select-placeholder option[disabled]:first-child {
+		display: none;
+	}
+	form {
+		.form-group {
+			margin-bottom: 10px;
+		}
+		.form-control {
+			border-radius: 0;
+			border-color: transparent;
+			padding: 14px 25px;
+		}
+		select.select-placeholder {
+			color: #87a6ba;
+			font-family: 'Futura T OT Light', sans-serif;
+			font-size: 20px;
+		}
+		.form-control::-webkit-input-placeholder { 
+			color: #87a6ba;
+			font-family: 'Futura T OT Light', sans-serif;
+			font-size: 20px;
+		} 
+		.form-control:-moz-placeholder { 
+			color: #87a6ba;
+			font-family: 'Futura T OT Light', sans-serif;
+			font-size: 20px;
+		}  
+		.form-control::-moz-placeholder { 
+			color: #87a6ba;
+			font-family: 'Futura T OT Light', sans-serif;
+			font-size: 20px;
+		}  
+		.form-control:-ms-input-placeholder { 
+			color: #87a6ba;
+			font-family: 'Futura T OT Light', sans-serif;
+			font-size: 20px;
+		}  
+		.form-control::-ms-input-placeholder { 
+			color: #87a6ba;
+			font-family: 'Futura T OT Light', sans-serif;
+			font-size: 20px;
+		}  
+		input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+		   background-color: transparent;
+		   // z-index: 1;
+		}
+		select.form-control:not([size]):not([multiple]) {
+		    height: auto;
+		    padding-left: 21px;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.modal-dialog {
+	    max-width: 545px;
+	}
+}
