@@ -24,6 +24,10 @@ html, body {
 .text-darkblue {
 	color: #030237;
 }
+a:visited, a:focus, .btn.focus, .btn:focus {
+	border-color: transparent;
+	box-shadow: none;
+}
 .btn-green {
 	font-family: 'Futura T OT Medium', sans-serif;
 	font-size: 22.82px;

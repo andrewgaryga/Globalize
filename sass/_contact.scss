@@ -1,70 +1,128 @@
 #contact-menu {
 	display: none;
 	opacity: 0;
-	position: fixed;
+	background-color: #51bc31;
+	position: absolute;
 	right: 0;
-	top: 84px;
+	top: 82px;
 	-webkit-transition: opacity .3s;
 	transition: opacity .3s;
 	z-index: 3;
+	width: 100%;
 	&.contact-visible {
 		display: block;
 		opacity: 1;
 	}
 	h3 {
-		padding-left: 75px;
-		margin-bottom: 30px;
+		padding-left: 0;
+		text-align: center;
 		margin-top: 45px;
+   		margin-bottom: 50px;
 	}
 	.contact-close {
+		display: block;
 		position: absolute;
-		right: 16px;
+		right: 26px;
 		top: 14px;
 		background-color: transparent;
 		border-color: transparent;
 	}
-	.contact-container {
-		width: 645px;
-		height: 600px;	
-		color: #fff;
-		.col-contact {
-			padding-left: 60px;
-		    padding-right: 0;
-		    max-width: 300px;
-		    &:nth-child(odd) {
-		    	padding-left: 90px;
-		    	max-width: 320px;
-		    }
-		    .contact-item {
-		    	// width: 215px;
-		    	margin-bottom: 20px;
-		    	h6 {
-		    		font-family: 'Futura T OT Demi', sans-serif;
-		    		font-size: 17px;
-					margin-bottom: 0;
-		    	}
-		    	p {
-		    		font-family: 'Futura T OT Light', sans-serif;
-		    	}
-		    }
-		}
-
+	.contact-close {
+		// display: none;
 	}
+	.contact-container {
+		color: #fff;
+	    .contact-item {
+	    	margin-bottom: 20px;
+	    	h6 {
+	    		font-family: 'Futura T OT Demi', sans-serif;
+	    		font-size: 17px;
+				margin-bottom: 0;
+	    	}
+	    	p {
+	    		font-family: 'Futura T OT Light', sans-serif;
+	    	}
+	 	}
+	}
+	.btn-contact-menu {
+		font-family: 'Futura T OT Demi', sans-serif;
+		color: #030237;
+		background-color: #fff;
+		font-size: 17px;
+		padding: 12px 60px;
+		border-radius: 0;
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+}
 
-	&:before {
-		position: absolute;
-		right: -6px;
-		top: -43px;
-		content: "";
-		width: 787px;
-		height: 701px;
-		display: inline-block;
-		background-color: transparent;
-		background-position : center center;
-		background-repeat:no-repeat;
-		background-image : url(../img/contact/contact-bg.png);
+@media (min-width: 768px) {
+	#contact-menu {
+		.contact-container {
+			max-width: 600px;
+		}
+		.contact-close {
+			right: 38px;
+		}
 	}
 }
 
 
+@media (min-width: 992px) {
+	#contact-menu {
+		position: fixed;
+		top: 84px;
+		background-color: transparent;
+		width: auto;
+		h3 {
+			padding-left: 75px;
+			text-align: left;
+			margin-bottom: 35px;
+		}
+		.contact-close {
+			right: 16px;
+		}
+		.contact-container {
+			max-width: 645px;
+			height: 600px;	
+    		padding-left: 0;
+			.col-contact {
+				padding-left: 60px;
+			    padding-right: 0;
+			    max-width: 300px;
+			    &:nth-child(odd) {
+			    	padding-left: 90px;
+			    	max-width: 320px;
+			    }
+			    .contact-item {
+			    	margin-bottom: 20px;
+			    	h6 {
+			    		font-family: 'Futura T OT Demi', sans-serif;
+			    		font-size: 17px;
+						margin-bottom: 0;
+			    	}
+			    	p {
+			    		font-family: 'Futura T OT Light', sans-serif;
+			    	}
+			    }
+			}
 
+		}
+		&:before {
+			position: absolute;
+			right: -6px;
+			top: -43px;
+			content: "";
+			width: 787px;
+			height: 701px;
+			display: inline-block;
+			background-color: transparent;
+			background-position : center center;
+			background-repeat:no-repeat;
+			background-image : url(../img/contact/contact-bg.png);
+		}
+		.btn-contact-menu {
+			display: none;
+		}
+	}
+}
