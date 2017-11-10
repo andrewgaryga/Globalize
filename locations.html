@@ -657,14 +657,55 @@ $('.dropdown-menu a').click(function(){
 		</div>
 	</div>
 
-	<section id="country-info">
+	<div id="map-nav-mobile2">
 		<div class="container">
 			<div class="row">
 				<div class="col">
+					<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Europe
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="#">Europe</a>
+					    <a class="dropdown-item" href="#">Europe</a>
+					    <a class="dropdown-item" href="#">Europe</a>
+					  </div>
+					</div>
+
+					<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Western Europe
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="#">Western Europe</a>
+					    <a class="dropdown-item" href="#">Western Europe</a>
+					    <a class="dropdown-item" href="#">Western Europe</a>
+					  </div>
+					</div>
+
+					<div class="dropdown country">
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    France
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="#">France</a>
+					    <a class="dropdown-item" href="#">France</a>
+					    <a class="dropdown-item" href="#">France</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="country-info" class="gradient-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6">
 					<img src="img/france.png" alt="" class="img-fluid country">
 				</div>
-				<div class="col text-left">
-					<img src="img/france_flag.png" alt="" class="img-fluid flag"><h3 class="map-text">France</h3>
+				<div class="col-12 col-md-6 text-left">
+					<img src="img/france_flag.png" alt="" class="img-fluid flag"><h3 class="map-text text-darkblue">France</h3>
 					<p><span class="map-text">France</span> has a mixed economy that combines extensive private enterprise with substantial state enterprise and government intervention. The government retains considerable influence over key segments of infrastructure sectors, with majority ownership of railway, electricity, aircraft, nuclear power and telecommunications.</p>
 
 <p>It has been relaxing its control over these sectors since the early 1990s. The government is slowly corporatising the state sector and selling off holdings in <span class="map-text">France</span> Télécom, Air <span class="map-text">France</span>, as well as in the insurance, banking, and defence industries. <span class="map-text">France</span> has an important aerospace industry led by the European consortium Airbus, and has its own national spaceport. </p>
@@ -680,90 +721,92 @@ $('.dropdown-menu a').click(function(){
 	<section id="numbers">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 mx-auto">
+				<div class="col-lg-8 mx-auto text-darkblue">
 					<h3>France in Numbers</h3>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-2">
-					<div class="numbers-item">
-						<h3>3,5 mil.</h3>
-						<p>Country Population</p>
+
+			<div class="col-12 col-sm-10 col-lg-8 col-xl-12 numbers-container">
+				<div class="row">
+					<div class="col-6 col-md-4 col-xl-2">
+						<div class="numbers-item">
+							<h3>3,5 mil.</h3>
+							<p>Country Population</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-2">
-					<div class="numbers-item">
-						<h3>3,5 mil.</h3>
-						<p>Country Population</p>
+					<div class="col-6 col-md-4 col-xl-2">
+						<div class="numbers-item">
+							<h3>1,8 mil.</h3>
+							<p>Online Shopers</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-2">
-					<div class="numbers-item">
-						<h3>3,5 mil.</h3>
-						<p>Country Population</p>
+					<div class="col-6 col-md-4 col-xl-2">
+						<div class="numbers-item">
+							<h3>1450 EUR</h3>
+							<p>Average Online Spend per 1 Shopper</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-2">
-					<div class="numbers-item">
-						<h3>3,5 mil.</h3>
-						<p>Country Population</p>
+					<div class="col-6 col-md-4 col-xl-2">
+						<div class="numbers-item">
+							<h3>7 %</h3>
+							<p>E-commerce Annual Growth</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-2">
-					<div class="numbers-item">
-						<h3>1450 EUR</h3>
-						<p>Average Online Spend
-per 1 Shopper</p>
+					<div class="col-6 col-md-4 col-xl-2">
+						<div class="numbers-item">
+							<h3>45 000</h3>
+							<p>Online Businesses</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-2">
-					<div class="numbers-item">
-						<h3>3,5 mil.</h3>
-						<p>Country Population</p>
+					<div class="col-6 col-md-4 col-xl-2">
+						<div class="numbers-item">
+							<h3>37 %</h3>
+							<p>E-commerce Share on Market</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="markets">
+	<section id="markets" class="gradient-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-6 mx-auto">
-					<h3>Specialities of the Markets in France </h3>
+					<h3 class="text-darkblue">Specialities of the Markets in France </h3>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-4">
+				<div class="col-12 col-xl-4">
 					<div class="markets-item green">
 						<div class="row">
 							<div class="col">
-								<h3>MEGA FACT</h3>
+								<h3>MEGA <br> FACT</h3>
 							</div>
 							<div class="col"><img src="img/markets/check.png" alt="" class="img-fluid markets-image"></div>
 						</div>
 						<p class="markets-text">We will give you an approximate monthly man-hours needed to work on your project and invoice you the real amount. If there will be more hours needed to work on the project, we will inform you upfront. We can modify the hours spent on different tasks and services on the go.</p>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-12 col-xl-4">
 					<div class="markets-item orange">
 						<div class="row">
 							<div class="col">
-								<h3>MEGA FACT</h3>
+								<h3>FUN <br> FACT</h3>
 							</div>
-							<div class="col"><img src="img/markets/check.png" alt="" class="img-fluid markets-image"></div>
+							<div class="col"><img src="img/markets/smile.png" alt="" class="img-fluid markets-image"></div>
 						</div>
 						<p class="markets-text">We will give you an approximate monthly man-hours needed to work on your project and invoice you the real amount. If there will be more hours needed to work on the project, we will inform you upfront. We can modify the hours spent on different tasks and services on the go.</p>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-12 col-xl-4">
 					<div class="markets-item red">
 						<div class="row">
 							<div class="col">
-								<h3>MEGA FACT</h3>
+								<h3>WATCH <br> OUT FOR</h3>
 							</div>
-							<div class="col"><img src="img/markets/check.png" alt="" class="img-fluid markets-image"></div>
+							<div class="col"><img src="img/markets/attention.png" alt="" class="img-fluid markets-image"></div>
 						</div>
 						<p class="markets-text">We will give you an approximate monthly man-hours needed to work on your project and invoice you the real amount. If there will be more hours needed to work on the project, we will inform you upfront. We can modify the hours spent on different tasks and services on the go.</p>
 					</div>
@@ -772,18 +815,18 @@ per 1 Shopper</p>
 		</div>
 	</section>
 
-	<section id="country-services">
+	<section id="country-services" class="gradient-bottom">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-6 mx-auto">
+				<div class="col-12 text-center text-darkblue">
 					<h3>Services Available in France</h3>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-10 mx-auto">
+				<div class="col-12 col-sm-11 col-md-8 col-lg-10  mx-auto">
 					<div class="row">
-						<div class="col-6">
+						<div class="col-12 col-lg-6">
 							<div class="services-item">
 								<div class="services-item-img">
 									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
@@ -794,59 +837,59 @@ per 1 Shopper</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-12 col-lg-6">
 							<div class="services-item">
 								<div class="services-item-img">
-									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
+									<img src="img/country-services/ico2_marketing.svg" alt="" class="img-heading img-fluid">
 								</div>
 								
 								<div class="country-services-caption">
-									<h5>Web Development & IT infrastructure</h5>
+									<h5>Marketing, design & Sales</h5>
+									<p>PPC, SEO, lead generation, translations</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="services-item">
+								<div class="services-item-img">
+									<img src="img/country-services/ico3_logistics.svg" alt="" class="img-heading img-fluid">
+								</div>
+								<div class="country-services-caption">
+									<h5>Logistics, Delivery & Fulfilment </h5>
 									<p>Own warehouse, and cooperation with DHL</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-12 col-lg-6">
 							<div class="services-item">
 								<div class="services-item-img">
-									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
+									<img src="img/country-services/ico4_support.svg" alt="" class="img-heading img-fluid">
 								</div>
 								<div class="country-services-caption">
-									<h5>Web Development & IT infrastructure</h5>
-									<p>Own warehouse, and cooperation with DHL</p>
+									<h5>Long-term Customer Support</h5>
+									<p>Phone, live chat, email</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-12 col-lg-6">
 							<div class="services-item">
 								<div class="services-item-img">
-									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
+									<img src="img/country-services/ico5_legal.svg" alt="" class="img-heading img-fluid">
 								</div>
 								<div class="country-services-caption">
-									<h5>Web Development & IT infrastructure</h5>
-									<p>Own warehouse, and cooperation with DHL</p>
+									<h5>Legal & Burreaucracy</h5>
+									<p>Set of native business lawyers at disposal</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-12 col-lg-6">
 							<div class="services-item">
 								<div class="services-item-img">
-									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
+									<img src="img/country-services/ico6_finance.svg" alt="" class="img-heading img-fluid">
 								</div>
 								<div class="country-services-caption">
-									<h5>Web Development & IT infrastructure</h5>
-									<p>Own warehouse, and cooperation with DHL</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-6">
-							<div class="services-item">
-								<div class="services-item-img">
-									<img src="img/country-services/ico1_webdev.svg" alt="" class="img-heading img-fluid">
-								</div>
-								<div class="country-services-caption">
-									<h5>Web Development & IT infrastructure</h5>
-									<p>Own warehouse, and cooperation with DHL</p>
+									<h5>Finance & Payments</h5>
+									<p>Bank Cards, Bank Transfers, COD, Invoices</p>
 								</div>
 							</div>
 						</div>
@@ -855,7 +898,7 @@ per 1 Shopper</p>
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<p>Do you have a question about France?</p>
+					<p class="question">Do you have a question about France?</p>
 					<a href="#" class="btn btn-green" data-toggle="modal" data-target="#myModal">Contact us</a>
 				<!-- 	<a class="btn btn-green" data-toggle="modal" data-target="#myModal">
 					  Open modal
@@ -883,32 +926,32 @@ per 1 Shopper</p>
 				</div>
 				<div class="col-8 offset-2 offset-sm-0 col-sm-6 col-contact">
 					<div class="contact-item">
-						<h6>Central and East Europe Office</h6>
-						<p>Staré Grunty 18 <br> 841 08 Bratislava <br> SLOVAKIA</p>
+						<h6>Western Europe Office</h6>
+						<p>XXXX XXXX 89<br>XXXX Dublin<br>IRELAND</p>
 					</div>
 				</div>
 				<div class="col-8 offset-2 offset-sm-0 col-sm-6 col-contact">
 					<div class="contact-item">
-						<h6>Central and East Europe Office</h6>
-						<p>Staré Grunty 18 <br> 841 08 Bratislava <br> SLOVAKIA</p>
+						<h6>South America Office</h6>
+						<p>XXXX XXXX 89<br>XXXX Belo Horizonte<br>BRAZIL</p>
 					</div>
 				</div>
 				<div class="col-8 offset-2 offset-sm-0 col-sm-6 col-contact">
 					<div class="contact-item">
-						<h6>Central and East Europe Office</h6>
-						<p>Staré Grunty 18 <br> 841 08 Bratislava <br> SLOVAKIA</p>
+						<h6>North America Office</h6>
+						<p>XXXX XXXX 89<br>XXXX New York<br>UNITED STATES</p>
 					</div>
 				</div>
 				<div class="col-8 offset-2 offset-sm-0 col-sm-6 col-contact">
 					<div class="contact-item">
-						<h6>Central and East Europe Office</h6>
-						<p>Staré Grunty 18 <br> 841 08 Bratislava <br> SLOVAKIA</p>
+						<h6>Asia Office</h6>
+						<p>XXXX XXXX 89<br>XXXX Guangzhou<br>CHINA</p>
 					</div>
 				</div>
 				<div class="col-8 offset-2 offset-sm-0 col-sm-6 col-contact">
 					<div class="contact-item">
-						<h6>Central and East Europe Office</h6>
-						<p>Staré Grunty 18 841 08 Bratislava SLOVAKIA</p>
+						<h6>Australia and Oceania Office</h6>
+						<p>SXXXX XXXX 89<br>XXXX Brisbane<br>AUSTRALIA</p>
 					</div>
 				</div>
 				<div class="col-8 offset-2 text-center">
@@ -918,6 +961,103 @@ per 1 Shopper</p>
 		</div>
 	</div>	
 
+	<section id="brand" class="locations-brand">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6 mx-auto">
+					<h3>Our Delivery Parners in France</h3>
+					<div class="clients-wrap">
+						<div class="row">
+							<div class="clients-image mx-auto"><img src="img/brands/pugglepay.jpg" alt="" class="img-fluid"></div>
+							<div class="clients-image mx-auto"><img src="img/brands/seb.jpg" alt="" class="img-fluid"></div>
+							<div class="clients-image mx-auto"><img src="img/brands/sepa.jpg" alt="" class="img-fluid"></div>
+							<div class="clients-image mx-auto"><img src="img/brands/sd.jpg" alt="" class="img-fluid"></div>
+							<div class="clients-image mx-auto"><img src="img/brands/skrill.jpg" alt="" class="img-fluid"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="brand" class="locations-brand">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6 mx-auto">
+					<h3>Payment Providers Available in France</h3>
+					<div class="clients-wrap">
+						<div class="row">
+							<div class="clients-image mx-auto"><img src="img/brands/cadillacjack.jpg" alt="" class="img-fluid"></div>
+							<div class="clients-image mx-auto"><img src="img/brands/dsgmbh.jpg" alt="" class="img-fluid"></div>
+							<div class="clients-image mx-auto"><img src="img/brands/foxium.jpg" alt="" class="img-fluid"></div>
+							<div class="clients-image mx-auto"><img src="img/brands/magnet.jpg" alt="" class="img-fluid"></div>
+							<div class="clients-image mx-auto"><img src="img/brands/softswiss.jpg" alt="" class="img-fluid"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="consultation">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 offset-sm-2 col-lg-8 col-xl-6 offset-xl-3 consultation-heading">
+					<h3>Initial Consultation is Always Free</h3>
+					<p>We will give you a FREE consultation and advices about expansion of your project up to 3 countries. Either you pick those, or we will suggest you the most suitable for you product or service.</p>
+				</div>
+			</div>
+	
+			<div class="card">
+				<div class="row">
+					<div class="photo">
+						<div class="card-img-left">
+						</div>
+						<div class="card-img-caption">
+							<h4>Jan Siroky, MiB</h4>
+							<p>Sales Officer</p>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card-block">
+							<form id="contactForm" name="sentMessage" novalidate="" class="">
+								<div class="row">
+									<div class="col-12">
+										<div class="form-group">
+										<input class="form-control" id="name" type="text" placeholder="Your name" required="" data-validation-required-message="Please enter your name.">
+										<p class="help-block text-danger"></p>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="form-group">
+										<input class="form-control" id="email" type="email" placeholder="E-mail" required="" data-validation-required-message="Please enter your email address.">
+										<p class="help-block text-danger"></p>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+										<input class="form-control" id="company-name" type="text" placeholder="Phone" required="" data-validation-required-message="Please enter company name.">
+										<p class="help-block text-danger"></p>
+										</div>
+									</div>
+									
+									<div class="col-12 text-center">
+										<div id="success"></div>
+										<button id="sendMessageButton" class="btn btn-green button-green-small" type="submit">Contact us Now</button>
+									</div>
+									
+								</div>
+								</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
 	<!-- The Modal -->
 	<div class="modal fade" id="myModal">
 		<div class="modal-dialog">
@@ -969,7 +1109,7 @@ per 1 Shopper</p>
 		<div class="container">
 			<div class="row  h-100">
 				<div class="col-12 col-sm-6 text-center text-sm-left my-auto"><img src="img/footer-logo.png" width="122" height="37" class="img-fluid" alt=""></div>
-				<div class="col-12 col-sm-6 text-center text-sm-right my-auto"><a href="#">Terms of service</a><a href="#">Contact us</a></div>
+				<div class="col-12 col-sm-6 text-center text-sm-right my-auto"><a href="#">Terms of service</a><a href="#" data-toggle="modal" data-target="#myModal">Contact us</a></div>
 			</div>
 		</div>	        
 	</footer>

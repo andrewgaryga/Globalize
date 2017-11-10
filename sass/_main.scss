@@ -24,6 +24,25 @@ html, body {
 .text-darkblue {
 	color: #030237;
 }
+.gradient-bottom {
+	position: relative;
+	&:after {
+	    transform: translateX(-50%);
+	    max-width: 1000px;
+	    content: '';
+	    width: 100%;
+	    position: absolute;
+	    left: 50%;
+	    bottom: -1px;
+	    height: 1px;
+	    background: #333;
+	    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, rgba(0, 62, 86, 0.39)), to(transparent));
+	    background: linear-gradient(left, transparent 0%, rgba(0, 62, 86, 0.39) 50%, transparent 100%);
+	    -webkit-box-shadow: 0 3px 20px 1px rgba(0, 62, 86, 0.1);
+	    box-shadow: 0 3px 20px 1px rgba(0, 62, 86, 0.1);
+	}
+
+}
 a:visited, a:focus, .btn.focus, .btn:focus {
 	border-color: transparent;
 	box-shadow: none;
